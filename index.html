@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookWave</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Romance</a></li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Ficção Científica</a></li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Fantasia</a></li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Biografias</a></li>
+        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Autoajuda</a></li>
+      </ul>
+      <img src="img/BookWaveLogo.svg" alt="Logo da BookWave" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinho" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Descubra sua próxima aventura</h2>
+    <p class="banner__texto">Explore novas histórias e aumente seu conhecimento!</p>
+    <input type="search" class="banner__pesquisa" placeholder="O que você quer ler hoje?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Lançamentos Recentes</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/Livro1.svg" alt="Capa do livro 1"></div>
+        <div class="swiper-slide"><img src="img/Livro2.svg" alt="Capa do livro 2"></div>
+        <div class="swiper-slide"><img src="img/Livro3.svg" alt="Capa do livro 3"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Você pode gostar de...</h3>
+          <h2 class="descrição__titulo-livro">Mundos Fantásticos</h2>
+          <p class="descrição__texto">Explorando novas realidades e seres místicos.</p>
+        </div>
+        <img src="img/Fantasia.svg" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro" /></li>
+          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar ao carrinho" /></li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Mais Vendidos</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/Livro4.svg" alt="Capa do livro 4"></div>
+        <div class="swiper-slide"><img src="img/Livro5.svg" alt="Capa do livro 5"></div>
+        <div class="swiper-slide"><img src="img/Livro6.svg" alt="Capa do livro 6"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Autor do Mês</h3>
+          <h2 class="descrição__titulo-livro">Carlos Monteiro</h2>
+          <p class="descrição__texto">Escritor de fantasia e realismo mágico.</p>
+        </div>
+        <img src="img/Autor.svg" class="descrição__imagem">
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar autor"></li>
+          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar ao carrinho"></li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">Tópicos Populares</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Ficção</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Filosofia</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Psicologia</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Tecnologia</a></li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Receba as últimas novidades!</h2>
+    <p class="contato__texto">Novos lançamentos, promoções e muito mais.</p>
+    <input type="email" placeholder="Digite seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo BookWave</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
